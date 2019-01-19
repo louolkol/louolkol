@@ -1,0 +1,253 @@
+.page-wrapper {
+	max-width:1600px;
+	margin-left: auto;
+	margin-right:auto;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+body{
+	background-color:#232323;
+}
+
+.login_system {
+    margin-top: 20;
+    float: right;
+	margin-right: auto;
+	margin-left: auto;
+	
+	padding-left: 200px;
+	padding-right:200px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	font-family: "Comfortaa";
+}
+.login_system h2 {
+    background: #87D866;
+    border-style: double;	
+	
+}
+
+.login_system form {
+    width: 200px;
+    border-radius: 10%;
+    border: dotted #FB8C52;
+    text-align: center;
+	padding-left: 200px;
+	padding-right: 200px;
+	background-color: #A0E3DD;
+	
+}
+
+.logo {
+    float: left;
+    margin-left: 100px;
+	margin-top:20px;
+}
+
+.logo:hover {
+    border-radius: 50%;
+    background-color: aqua;
+}
+nav ul {
+    clear: both;
+    background-color: #E8A8A9;
+    text-align: center;
+    display:flex;  
+	justify-content: space-around;
+	flex-flow: row wrap;
+} 
+
+nav ul {
+	text-align: center;
+	list-style-type: none;
+	padding-left: 0px;
+}
+nav a    {
+    text-decoration: none;
+    color: #FFFFFF;
+    display: block;
+    margin-bottom: 10px;
+	margin-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+    background-color: #5A6773;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: "Cookie";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2em;
+	border-radius: 30%;
+	
+}
+nav a:hover {
+	background-color: #3E678B;
+}
+	
+.main_section{
+	position: relative;
+	width:75%;
+	height:75vh;
+	margin-left: auto;
+	margin-right:auto; 
+	display: flex;	
+	overflow: hidden;
+	width: auto;
+	flex-flow: row wrap;
+	
+}
+.main_section .slogan{
+    text-align: left;
+    font-size: 5rem;
+    font-family: "Bungee";
+    background: #6358F8;
+    padding: 30px;
+    margin: auto;
+    z-index: 1;
+    opacity: 0.7;
+    width: 90%;
+    height: 200px;
+    float: left;
+    clear: both;
+    text-shadow: 10px 5px 5px #060606;
+    color: azure;
+    line-height: 20mm;
+}
+
+.main_section .start{
+    text-align: left;
+    font-size: 4rem;
+    font-family: "Righteous";
+    background: #6358F8;
+    padding: 20px;	
+    margin: 30px;
+    z-index: 1;
+    opacity: 0.9;
+    float: left;
+	width: 300px;
+    height: 400px;	
+	color: azure;
+	flex-grow:1;
+	border-radius: 10%;
+}
+.main_section .start:hover{
+	color:aqua;
+}
+
+.main_section .search{
+    text-align: left;
+    font-size: 4rem;
+    font-family: "Righteous";
+    background: #6358F8;
+    padding: 20px;
+    margin: 30px;
+    z-index: 1;
+    opacity: 0.9;
+    float: right;
+	width: 300px;
+    height: 400px;
+	color: azure;
+	flex-grow:1;
+	border-radius: 10%;
+}
+.main_section .search:hover{
+	color: aqua;
+}
+
+.video_container {
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	
+}
+.video_container video {
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	z-index: -20;
+}
+
+.color_overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	background-color:#D0D0D0;
+	width:100%;
+	height: 100vh;
+	opacity: 0.3;
+}
+
+@media screen and (max-width:1550px){
+	.logo{
+		width:auto;
+		height: auto;
+		float: none;
+		margin-right: auto;
+		margin-left:auto;
+		padding-left: auto;
+		padding-right: auto;
+		display: block;
+	}
+	.login_system{
+    margin-right: auto;
+    margin-left: auto;
+    float: none;
+    clear: both;
+    padding-left: 13%;
+    padding-right: auto;
+	}
+	.login_system form{
+		margin-right:auto;
+		margin-left:auto;
+		padding:auto;
+		float:none;
+	}
+	.main_section{
+		overflow: visible;
+	}
+	.color_overlay{
+		height: 150vh;
+	}
+}
+
+@media screen and (max-width:750px){
+	.logo{
+		width: 400px;
+		height: auto;
+		float: none;
+		margin-right:auto;
+		margin-left:auto;
+		padding: auto;
+		display: block;
+	}
+	.login_system form{
+		margin-right:auto;
+		margin-left:auto;
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+	.nav-bar div{
+    display: none;		
+	}
+	.login_system{
+		margin: auto;
+		float:none;
+		clear:both;
+		padding: 20px;
+	}
+	.video_container{
+		display: none;
+	}
+	.main_section .slogan{
+		height: auto;
+	}
+	.main_section .search{
+		height: auto;
+	}
+}
+

@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Registeration Form</title>
+<link rel="stylesheet" href="register_page.css">
+<link href="https://fonts.googleapis.com/css?family=ABeeZee|Dokdo" rel="stylesheet">
+<script>
+  function print_result() {
+    var msg = "Name = " + document.f1.username.value;
+	msg += "\nEmail = " + document.f1.email.value;
+	msg += "\nAge = " + document.f1.age.value;
+	msg += "\nPassword = " + document.getElementById('tfPwd').value;  
+	if(document.f1.gender[0].checked)
+		msg += "\nGender = " + document.f1.gender[0].value;
+	else
+		msg += "\nGender = " + document.f1.gender[1].value;
+		
+		
+	var Favorite_film_genre = "";
+	for(var i=0; i<document.f1.genres.length; i++) {
+		if(document.f1.genres[i].checked)
+			Favorite_film_genre += document.f1.genres[i].value + "  ";
+	}
+	
+	msg += "\nFavorite film genre = " + Favorite_film_genre;
+	msg += "\n\n\nThank you for your registeration!";
+	  
+	if(document.getElementById('tfPwd').value != document.getElementById('tfRPwd').value) {
+				alert('Password do not match! set again plz.');}
+	else{
+				alert(msg);}	
+	  
+  }
+ </script>
+	
+	
+</head>
+
+<body>
+	
+
+<form name="f1" onSubmit="print_result()">
+	<h1 class="form_header">Registeration Form</h1>
+	<table>
+	<tr>
+		<td>
+		<input type="text" name="username" pattern="^[A-Z][a-zA-Z]*$" placeholder="Username"
+                 title="Capital first in the name" required="required"/>
+		</td>
+    </tr> 
+	<tr>
+		<td>
+		<input class="email" type="email" name="email" title="email address" placeholder="Email" required="required">
+		</td>
+    </tr>
+	<tr>
+		<td>	
+		<input type="number" name="age" min="5" pattern="^[0-9]{1,2}$" title="above 5 years old, and not accept older than 111" placeholder="Age" required="required" />
+		</td>
+    </tr> 
+	
+	<tr>
+		<td>	
+		<input type="password" placeholder="Password" pattern="^[0-9A-Za-z!@#$%^&*_+]{6,13}$" title="accept !@#$%^&*0-9A-Za-z, and should have 6 to 13 charaters" id="tfPwd" required="required" />
+		</td>
+    </tr> 
+	<tr>
+		<td>
+		<input type="password" placeholder="Password retype" id="tfRPwd" required="required"/>
+		</td>
+    </tr>
+	<tr>
+		<td>
+			<h4>Gender:</h4>
+		<input type="radio" name="gender" value="M" required="required" />Male
+	
+        <input type="radio" name="gender" value="F" />Female
+		</td>
+    </tr>
+	<tr>
+        <td>
+		<h4>Favorite Film Genres   (optional):</h4>
+          <input type="checkbox" name="genres" value="action" />Action
+          <input type="checkbox" name="genres" value="Adventure" />Adventure
+          <input type="checkbox" name="genres" value="Comedies" />Comedies<br/>        
+          <input type="checkbox" name="genres" value="Epics" />Epics  
+          <input type="checkbox" name="genres" value="Horror" />Horror 
+		  <input type="checkbox" name="genres" value="Musical/dance" />Musical/dance<br/>
+		  <input type="checkbox" name="genres" value="Sci-fi" />Sci-fi
+	      <input type="checkbox" name="genres" value="War" />War 
+		</td>
+      </tr> 		
+	</table>
+	<br/>
+	<input class="submitbutton" type="submit" value="Submit" />                           
+</form>
+
+</body>
+</html>

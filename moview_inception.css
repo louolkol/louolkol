@@ -1,0 +1,85 @@
+body{
+    background-image: url(Inception_poster_goldposter.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.page-wrapper {
+	max-width:1600px;
+	margin-left: auto;
+	margin-right:auto;	
+}
+
+.logo {
+    width:256px;
+	height: 128px;
+	margin-left:5%;
+}
+
+.logo:hover {
+    border-radius: 50%;
+    background-color: aqua;
+}
+
+.main_frame{
+    border-style: solid;
+    background-color:#FFFBCA;
+    padding: 50px;
+    opacity: 1;
+    z-index: 1;
+}
+.main_article{
+	font-family: "Noto Sans TC";
+}
+.post_less {
+	width:247px;
+	height: 360px;
+	float: left;
+	margin: 30px;
+}
+
+.main_title {
+    color: #6C00AB;
+    font-weight: 800;
+    text-shadow: 3px 4px 1px #929292;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.iframe_container{ 
+  	width:80%;  	
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0px;
+}
+
+.photo {
+    margin-right: auto;
+    margin-left: auto;
+    width: 70%;
+    height: auto;
+    padding-right: auto;
+    padding-left: auto;
+    display: block;
+}
+
+.search {
+    border-radius: 20%;
+    border-style: solid;
+    border-color: #E4E4E4;
+    background-color: #B4E7CE;
+    padding-right: auto;
+    padding-left: auto;
+    float: right;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+	margin-right:5%
+}
+.search img {
+	width:40px;
+	height: 40px;
+}
+
